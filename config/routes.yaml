@@ -2,7 +2,12 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
-messenger:
-  path: /messenger
-  controller: App\Controller\MessengerAction
+mailer:
+  path: /mail
+  controller: App\Controller\MailerController
+  methods: [GET]
+
+mailer_async:
+  path: /mail-async
+  controller: App\Controller\RegisterController
   methods: [GET]
